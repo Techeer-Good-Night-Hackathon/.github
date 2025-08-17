@@ -44,36 +44,43 @@ Good-Night-Hackathon/
 ```
 🚀 프로젝트 실행 방법
 1. 인프라 실행 (DB, Redis, Grafana)
+```
 cd hackachon-infra
 docker-compose up -d
-
-2. 백엔드 API 실행
+```
+3. 백엔드 API 실행
+```
 cd hackathon-api/Hackathon-api
 ./gradlew bootRun
-
+```
 Swagger API 문서: http://localhost:8080/swagger-ui/index.html
 
 3. 프론트엔드 실행
+```
 cd hackathon-frontend
 npm install
 npm start
-
+```
 웹 애플리케이션: http://localhost:3001/login
 
 🧪 테스트
 백엔드 단위/통합 테스트
+```
 cd hackathon-api/Hackathon-api
 ./gradlew test
-
+```
 프론트엔드 테스트
+```
 cd hackathon-frontend
 npm test
+```
 
 부하 테스트 (k6)
+```
 cd hackachon-infra
 # k6 컨테이너 실행 후 테스트 스크립트 실행
 docker-compose run k6 run /scripts/load-test.js
-
+```
 Grafana 대시보드: http://localhost:3000 에서 실시간 모니터링
 
 ✨ 주요 기능 및 화면
@@ -83,32 +90,43 @@ Grafana 대시보드: http://localhost:3000 에서 실시간 모니터링
 
 Swagger API 문서
 
-![image.png](attachment:51d2e34a-733e-4e06-ba47-1fe5357bcccf:image.png)
+<img width="703" height="580" alt="image" src="https://github.com/user-attachments/assets/49a99c0e-6779-4772-ad4d-b4cc63b7705d" />
+
 
 동시성 제어 테스트
 
-![image.png](attachment:51496bd2-e59e-4a82-864b-8d644ad1d77d:image.png)
+<img width="706" height="123" alt="image" src="https://github.com/user-attachments/assets/30f1b0f7-b7f4-48e8-a0dc-dd7912ac6708" />
+
 
 부하 테스트(1000명) 모니터링
 
-![image.png](attachment:61876df3-b439-47cf-9527-a733dbbbe561:image.png)
+<img width="667" height="746" alt="image" src="https://github.com/user-attachments/assets/7cde6f52-193b-4e3d-91aa-d18799be6cd9" />
+
 
 회원가입 및 로그인
-![image.png](attachment:f78174a6-f802-4f84-8e20-81cda6517112:image.png)
-![image.png](attachment:db769538-3583-45cd-b3ea-a97504bb2fa7:image.png)
+<img width="702" height="452" alt="image" src="https://github.com/user-attachments/assets/cc171251-a53e-41a7-b732-b3d9ca43c463" />
+
+<img width="730" height="430" alt="image" src="https://github.com/user-attachments/assets/466174d7-1d18-41a2-a1af-e810eae13d2b" />
+
 
 콘서트 목록 조회
 
-![image.png](attachment:d4cef530-ce6f-4861-82f6-856191a218cc:image.png)
-![image.png](attachment:e5cf70b7-658b-41ad-9bb7-210f494623c5:image.png)
+<img width="708" height="426" alt="image" src="https://github.com/user-attachments/assets/f147bf74-5968-460f-a2f6-2de380e5a34a" />
+
+
+<img width="708" height="450" alt="image" src="https://github.com/user-attachments/assets/ef8a393a-a1da-48ba-92d7-7d482038be0a" />
+
 
 좌석 현황 조회 및 선택
 
-![image.png](attachment:db6a254b-e791-4e42-8adc-fabb7fa113c1:image.png)
-![image.png](attachment:51e6cc01-e3bf-46bd-8d47-87c2897c1728:image.png)
+<img width="710" height="445" alt="image" src="https://github.com/user-attachments/assets/6f41e8f4-23b9-4214-a1b5-9fa2ba787a42" />
+
+<img width="704" height="414" alt="image" src="https://github.com/user-attachments/assets/e95fb401-62cc-4f7f-8ff5-b834c8bc62ad" />
+
 
 실시간 좌석 상태 반영
-![image.png](attachment:234c1aa4-7ee7-4f74-bb1c-d6a649b2ba68:image.png)
+<img width="708" height="326" alt="image" src="https://github.com/user-attachments/assets/084b9878-2134-4018-bd9f-c18fd3764a1e" />
+
 
 
 🔧 기술 스택 및 선택 이유
