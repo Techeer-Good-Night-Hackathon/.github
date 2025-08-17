@@ -7,6 +7,7 @@ Good-Night-4th-Hackathon: 공연 좌석 예매 시스템
 데이터베이스는 PostgreSQL을, 캐시 및 동시성 제어를 위해 Redis를 사용했습니다. Docker Compose를 통해 전체 개발 환경(DB, Redis, Grafana 등)을 컨테이너화하여 환경 통일성과 배포 편의성을 확보했습니다.
 
 🏗️ 프로젝트 구조
+'''
 Good-Night-Hackathon/
 ├── hackachon-infra/                    # 인프라 및 모니터링
 │   ├── docker-compose.yml              # 인프라 서비스 구성 (DB, Redis, Grafana, K6)
@@ -40,7 +41,7 @@ Good-Night-Hackathon/
 │       ├── services/                   # API 통신 서비스
 │       └── styles/                     # 스타일 파일
 └── README.md                           # 프로젝트 메인 문서
-
+'''
 🚀 프로젝트 실행 방법
 1. 인프라 실행 (DB, Redis, Grafana)
 cd hackachon-infra
